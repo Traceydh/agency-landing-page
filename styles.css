@@ -100,24 +100,47 @@ a:hover {
 
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-  }
+}
 
-  .heading-container {
+.heading-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+}
 
-  /*Grid section */
-  .graphic-design {
-    background-image: url('image-graphic-design.jpg');
+/*Grid section */
+.graphic-design {
+    background-image: url('/images/desktop/image-graphic-design.jpg');
     background-size: cover;
     background-position: center;
-  }
+}
 
-  .photography {
-    background-image: url('image-photography.jpg');
+.photography {
+    background-image: url('/images/desktop/image-photography.jpg');
     background-size: cover;
     background-position: center;
-  }
+}
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-child {
+    margin: auto auto;
+    height: 400px;
+}
+
+.text {
+    padding: 0 10% 0 10%;
+}
+
+.grid-child * {
+    color: black;
+}
+
+.grid-container img{
+    width: 50vw;
+}
+
+/*testtimonials*/
