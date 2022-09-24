@@ -1,12 +1,30 @@
 * {
-
     font-family: 'Open Sans', sans-serif;
     font-family: 'Fraunces', serif;
     font-family: 'Barlow', sans-serif;
     box-sizing: border-box;
 }
 
+:root {
+    --red:hsl(7, 99%, 70%);
+    --yellow:hsl(51, 100%, 49%);
+    --cyan:hsl(167, 40%, 24%);
+    --blue:hsl(198, 62%, 26%);
+    --darkcyan:hsl(168, 34%, 41%);
+
+    --darkblue:hsl(212, 27%, 19%);
+    --verygreyblue:hsl(213, 9%, 39%);
+    --darkgreyblue:hsl(232, 10%, 55%);
+    --greyblue:hsl(210, 4%, 67%);
+    --white:hsl(0, 0%, 100%); 
+
+
+}
 /*
 bold class for titles 
 
 */
+
+.barlow {
+    font-weight: 600;
+}
