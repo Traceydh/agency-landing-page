@@ -3,6 +3,7 @@
     font-family: 'Fraunces', serif;
     font-family: 'Barlow', sans-serif;
     box-sizing: border-box;
+    font-size: 18px;
 }
 
 :root {
@@ -18,13 +19,31 @@
     --greyblue:hsl(210, 4%, 67%);
     --white:hsl(0, 0%, 100%); 
 
-
+    --padding: 3rem;
 }
 /*
 bold class for titles 
-
 */
 
+/*Header section */
 .barlow {
     font-weight: 600;
+}
+
+header {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1rem;
 }
