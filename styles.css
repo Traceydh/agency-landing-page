@@ -20,6 +20,7 @@
     --white:hsl(0, 0%, 100%); 
 
     --padding: 3rem;
+    --headerheight: 50vh;
 }
 /*
 bold class for titles 
@@ -33,12 +34,24 @@ bold class for titles
 header {
     padding-left: var(--padding);
     padding-right: var(--padding);
+    height: var(--headerheight);
 }
+
+img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    z-index: -1;
+    height: var(--headerheight);
+    width: 100%
+}
+
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .menu {
