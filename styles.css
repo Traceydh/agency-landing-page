@@ -21,7 +21,7 @@
     --white:hsl(0, 0%, 100%); 
 
     --padding: 3rem;
-    --headerheight: 50vh;
+    --headerheight: 80vh;
 }
 /* General classes*/
 .heading {
@@ -29,28 +29,19 @@
     font-weight: 900;
 }
 
-/*Header section */
-.barlow {
+.bold600 {
     font-weight: 600;
 }
-
+/*Header section */
 header {
     padding-left: var(--padding);
     padding-right: var(--padding);
     height: var(--headerheight);
     position: relative;
+    background-image: url('images/desktop/image-header.jpg');
+    background-size: cover;
+    background-position: center;
 }
-
-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: var(--headerheight);
-    width: 100%
-}
-
 
 nav {
     display: flex;
@@ -77,6 +68,6 @@ a:hover {
 }
 
 .hero{
-    padding-top: 5%;
+    padding-top: 5vh;
     text-align: center;
 }
