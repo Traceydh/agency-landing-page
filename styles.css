@@ -20,7 +20,7 @@
     --greyblue:hsl(210, 4%, 67%);
     --white:hsl(0, 0%, 100%); 
 
-    --padding: 3rem;
+    --padding: 2rem;
     --headerheight: 80vh;
 }
 /* General classes*/
@@ -32,6 +32,7 @@
 .bold600 {
     font-weight: 600;
 }
+
 /*Header section */
 header {
     padding-left: var(--padding);
@@ -67,7 +68,44 @@ a:hover {
     border-radius: 25px;
 }
 
-.hero{
+.hero {
     padding-top: 5vh;
     text-align: center;
 }
+
+.arrow {
+    position: relative;
+    left: 50%;
+    top: 15vh;
+}
+
+.down {
+    border: solid white;
+    border-width: 0 5px 0 0;
+    display: inline-block;
+    height: 100px;
+    border-radius: 3px;
+}
+
+.point {
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 80px;
+    left: -8px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*Grid section */
