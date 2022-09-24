@@ -109,3 +109,15 @@ a:hover {
   }
 
   /*Grid section */
+  .graphic-design {
+    background-image: url('image-graphic-design.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .photography {
+    background-image: url('image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
