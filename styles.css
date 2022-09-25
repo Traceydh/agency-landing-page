@@ -124,7 +124,7 @@ a:hover {
 }
 
 .grid-child h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .graphic-design {
@@ -139,14 +139,20 @@ a:hover {
     border-style: none;
     width: 50vw;
     height: auto;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .text {
-    padding: 15%;
+    width: 50%;
 }
 
 .grid-container img {
    width: 50vw;
+   height: 100%;
 }
 
 /*testtimonials*/
