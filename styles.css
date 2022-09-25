@@ -150,7 +150,7 @@ a:hover {
     opacity: 70%;
     z-index: -1;
     transform: scaleX(0);
-    transition: 0.8s;
+    transition: 0.5s;
 }
 
 .red:hover::after {
@@ -168,22 +168,16 @@ a:hover {
    height: 100%;
 }
 
-.graphic-design {
-    background-image: url('/images/desktop/image-graphic-design.jpg');
-}
-
-.photography {
-    background-image: url('/images/desktop/image-photography.jpg');
-}
-
 .background {
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    z-index: -1;
 }
 
 .bottom {
-    margin-top: 10rem;
+    position: absolute;
+    bottom: 10%;
     text-align: center;
+    width: 70%;
 }
 
 /*testtimonials*/
