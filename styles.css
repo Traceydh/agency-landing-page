@@ -199,6 +199,39 @@ a:hover {
     width: 70%;
 }
 
+.before-image {
+    display: none;
+}
+
+/***GRid section Phone****/
+@media (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-child {
+        width: 100vw;
+    }
+
+    .grid-child>img {
+        width: 100vw;
+    }
+
+    .after-image {
+        display: none;
+    }
+    .before-image {
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    .bottom {
+        bottom: 2%;
+    }
+}
+
 /***********testimonials***********/
 .testimonials {
     height: 70vh;
@@ -229,6 +262,15 @@ a:hover {
     width: 6rem;
     border-radius: 50%;
 }
+
+/***testimonials Phone****/
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
 
 /***********images***********/
 .images {
