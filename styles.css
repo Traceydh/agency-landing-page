@@ -52,6 +52,10 @@ li {
     font-size: 1.3rem;
 }
 
+nav>button {
+    display: none;
+}
+
 /******** Header section ********/
 header {
     padding-left: var(--padding);
@@ -203,29 +207,6 @@ a:hover {
     display: none;
 }
 
-/***GRid section Phone****/
-@media (max-width: 600px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .grid-child {
-        width: 100vw;
-    }
-
-    .grid-child>img {
-        width: 100vw;
-    }
-
-    .after-image {
-        display: none;
-    }
-    .before-image {
-        display: block;
-    }
-}
-
 @media (max-width: 900px) {
     .bottom {
         bottom: 2%;
@@ -262,25 +243,6 @@ a:hover {
     width: 6rem;
     border-radius: 50%;
 }
-
-/***testimonials Phone****/
-@media (max-width: 600px) {
-    .profile-container {
-        flex-direction: column;
-        gap: 0;
-    }
-    .testimonials {
-        height: auto;
-    }
-    .profile {
-        width: 70%;
-        margin: 0 auto;
-        margin-bottom: 3rem;
-        gap: 1rem;
-    }
-}
-
-
 /***********images***********/
 .images {
     display: flex;
@@ -289,18 +251,6 @@ a:hover {
 .images img {
     width: 25vw;
 }
-
-/***images Phone****/
-@media (max-width: 600px) {
-    .images {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .images img {
-        width: 50vw;
-    }
-}
-
 /***********Contact***********/
 footer {
     background-color: var(--darkcyan);
@@ -326,4 +276,65 @@ footer * {
 
 .links>img:hover {
     filter: brightness(0) invert(1) ;
+}
+
+/***********Responsive ***********/
+@media (max-width: 600px) {
+    /***Header Phone****/
+    .menu {
+        display: none;
+    }
+    nav {
+        padding-top: 1rem;
+    }
+
+    nav>button {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    /***GRid section Phone****/
+    .grid-container {
+        display: grid;
+         grid-template-columns: 1fr;
+    }
+        
+    .grid-child {
+        width: 100vw;
+    }
+
+    .grid-child>img {
+        width: 100vw;
+    }
+
+    .after-image {
+        display: none;
+    }
+    .before-image {
+        display: block;
+    }
+    
+    /***testimonials Phone****/
+    .profile-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .testimonials {
+        height: auto;
+    }
+    .profile {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        gap: 1rem;
+    }
+
+    /***images Phone****/
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .images img {
+        width: 50vw;
+    }
 }
