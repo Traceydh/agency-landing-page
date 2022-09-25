@@ -220,3 +220,10 @@ a:hover {
 }
 
 /***********images***********/
+.images {
+    display: flex;
+}
+
+.images img {
+    width: 25vw;
+}
