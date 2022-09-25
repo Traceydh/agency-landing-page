@@ -118,27 +118,13 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.background {
-    background-size: cover;
-    background-position: center;
-}
-
 .grid-child h2 {
     font-size: 2rem;
 }
 
-.graphic-design {
-    background-image: url('/images/desktop/image-graphic-design.jpg');
-}
-
-.photography {
-    background-image: url('/images/desktop/image-photography.jpg');
-}
-
 .grid-child {
-    border-style: none;
     width: 50vw;
-    height: auto;
+    min-height: 24rem;
 
     display: grid;
     justify-items: center;
@@ -153,23 +139,28 @@ a:hover {
     position: relative;
 }
 
-.line {
+.learn-more::after {
+    content: '';
     position: absolute;
     top: 68%;
-    left: -3%;
+    left: -7px;
     width: 7.5rem;
     height: 9px;
     border-radius: 5px;
     opacity: 70%;
     z-index: -1;
+    transform: scaleX(0);
+    transition: 0.8s;
 }
 
-.red-color {
+.red:hover::after {
     background-color: var(--red);
+    transform: scaleX(1);
 }
 
-.yellow-color {
+.yellow:hover::after {
     background-color: var(--yellow);
+    transform: scaleX(1);
 }
 
 .grid-container img {
@@ -177,6 +168,22 @@ a:hover {
    height: 100%;
 }
 
+.graphic-design {
+    background-image: url('/images/desktop/image-graphic-design.jpg');
+}
 
+.photography {
+    background-image: url('/images/desktop/image-photography.jpg');
+}
+
+.background {
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom {
+    margin-top: 10rem;
+    text-align: center;
+}
 
 /*testtimonials*/
