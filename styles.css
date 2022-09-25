@@ -269,6 +269,15 @@ a:hover {
         flex-direction: column;
         gap: 0;
     }
+    .testimonials {
+        height: auto;
+    }
+    .profile {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+        gap: 1rem;
+    }
 }
 
 
@@ -279,6 +288,17 @@ a:hover {
 
 .images img {
     width: 25vw;
+}
+
+/***images Phone****/
+@media (max-width: 600px) {
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .images img {
+        width: 50vw;
+    }
 }
 
 /***********Contact***********/
