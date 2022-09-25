@@ -33,6 +33,10 @@
     font-weight: 600;
 }
 
+.grey {
+    color: var(--darkgreyblue);
+}
+
 /******** Header section ********/
 header {
     padding-left: var(--padding);
@@ -182,23 +186,37 @@ a:hover {
 
 /***********testimonials***********/
 .testimonials {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.testimonials h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
 }
 
 .profile-container {
     display: flex;
+    justify-content: center;
+    gap: 7%;
 }
 
 .profile {
+    width: 20%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
 }
 
 .profile img {
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
     border-radius: 50%;
 }
+
+/***********images***********/
