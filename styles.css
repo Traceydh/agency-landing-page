@@ -180,4 +180,25 @@ a:hover {
     width: 70%;
 }
 
-/*testtimonials*/
+/***********testimonials***********/
+.testimonials {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
