@@ -143,16 +143,40 @@ a:hover {
     display: grid;
     justify-items: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .text {
     width: 50%;
 }
 
+.learn-more {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: 68%;
+    left: -3%;
+    width: 7.5rem;
+    height: 9px;
+    border-radius: 5px;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.red-color {
+    background-color: var(--red);
+}
+
+.yellow-color {
+    background-color: var(--yellow);
+}
+
 .grid-container img {
    width: 50vw;
    height: 100%;
 }
+
+
 
 /*testtimonials*/
