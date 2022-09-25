@@ -12,7 +12,7 @@
     --yellow:hsl(51, 100%, 49%);
     --cyan:hsl(167, 40%, 24%);
     --blue:hsl(198, 62%, 26%);
-    --darkcyan:hsl(168, 34%, 41%);
+    --darkcyan:hsl(168, 59%, 65%);
 
     --darkblue:hsl(212, 27%, 19%);
     --verygreyblue:hsl(213, 9%, 39%);
@@ -35,6 +35,21 @@
 
 .grey {
     color: var(--darkgreyblue);
+}
+
+li {
+    list-style-type: none;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.3rem;
 }
 
 /******** Header section ********/
@@ -61,7 +76,6 @@ nav {
 .menu {
     display: flex;
     flex-direction: row;
-    list-style-type: none;
     gap: 1rem;
 }
 
@@ -74,6 +88,7 @@ a {
 a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
+    color: var(--white);
 }
 
 .hero {
@@ -187,10 +202,6 @@ a:hover {
 /***********testimonials***********/
 .testimonials {
     height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 .testimonials h3 {
@@ -226,4 +237,31 @@ a:hover {
 
 .images img {
     width: 25vw;
+}
+
+/***********Contact***********/
+footer {
+    background-color: var(--darkcyan);
+    height: 40vh;
+}
+
+footer * {
+    color: var(--cyan)
+}
+
+.links {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links>img:hover {
+    filter: brightness(0) invert(1) ;
 }
