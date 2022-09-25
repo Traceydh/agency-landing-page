@@ -4,7 +4,7 @@
     font-family: 'Barlow', sans-serif;
     box-sizing: border-box;
     font-size: 18px;
-    color: var(--white);
+    color: black;
 }
 
 :root {
@@ -33,7 +33,7 @@
     font-weight: 600;
 }
 
-/*Header section */
+/******** Header section ********/
 header {
     padding-left: var(--padding);
     padding-right: var(--padding);
@@ -42,6 +42,10 @@ header {
     background-image: url('images/desktop/image-header.jpg');
     background-size: cover;
     background-position: center;
+}
+
+header * {
+    color: var(--white);
 }
 
 nav {
@@ -108,39 +112,41 @@ a:hover {
     justify-content: center;
 }
 
-/*Grid section */
-.graphic-design {
-    background-image: url('/images/desktop/image-graphic-design.jpg');
+/******** GRid section ********/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.background {
     background-size: cover;
     background-position: center;
+}
+
+.grid-child h2 {
+    font-size: 1.5rem;
+}
+
+.graphic-design {
+    background-image: url('/images/desktop/image-graphic-design.jpg');
 }
 
 .photography {
     background-image: url('/images/desktop/image-photography.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .grid-child {
-    margin: auto auto;
-    height: 400px;
+    border-style: none;
+    width: 50vw;
+    height: auto;
 }
 
 .text {
-    padding: 0 10% 0 10%;
+    padding: 15%;
 }
 
-.grid-child * {
-    color: black;
-}
-
-.grid-container img{
-    width: 50vw;
+.grid-container img {
+   width: 50vw;
 }
 
 /*testtimonials*/
