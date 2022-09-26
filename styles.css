@@ -56,6 +56,10 @@ nav>button {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /******** Header section ********/
 header {
     padding-left: var(--padding);
@@ -83,13 +87,13 @@ nav {
     gap: 1rem;
 }
 
-a {
+.menu>li {
     text-decoration: none;
     padding: 0.5rem 0.8rem;
     transition: opacity 1s;
 }
 
-a:hover {
+.menu>li:hover {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     color: var(--white);
@@ -135,6 +139,55 @@ a:hover {
     justify-content: center;
 }
 
+.hamburger-pop-up {
+    position: absolute;
+    background-color: var(--white);
+    top: 4rem;
+    left: 10vw;
+    width: 80vw;
+}
+
+.menu-pop-up * {
+    color: var(--greyblue);
+    margin-left: -1rem;
+}
+
+.speech-bubble {
+    position: relative;
+}
+
+.menu-pop-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-pop-up:after {
+    content: '';
+	position: absolute;
+	top: -20px;
+	right: 0;
+	width: 0;
+	height: 0;
+	border: 30px solid transparent;
+	border-bottom-color: var(--white);
+	border-top: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-top: -20px;
+}
+
+.menu-pop-up>li {
+    padding: 0.5rem 0.4rem;
+    border-radius: 25px;
+}
+
+.menu-pop-up>li:hover {
+    background-color: var(--yellow);
+    color: var(--greyblue)
+}
 /******** GRid section ********/
 .grid-container {
     display: grid;
