@@ -1,6 +1,5 @@
 let hamburger = document.querySelector('#hamburger');
+let dropDown = document.querySelector("#drop-down")
 hamburger.addEventListener('click', () => {
-    console.log('click')
-    let dropDown = document.querySelector("#drop-down")
     dropDown.classList.toggle('on');
 })

@@ -151,9 +151,14 @@ nav {
     display: none;
 }
 
+@media (min-width: 600px) {
+    .on {
+        display: none;
+    }
+}
+
 .menu-pop-up * {
     color: var(--greyblue);
-    margin-left: -1rem;
 }
 
 .speech-bubble {
@@ -186,6 +191,7 @@ nav {
 .menu-pop-up>li {
     padding: 0.5rem 0.4rem;
     border-radius: 25px;
+
 }
 
 .menu-pop-up>li:hover {
