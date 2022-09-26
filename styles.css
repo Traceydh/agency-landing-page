@@ -147,6 +147,10 @@ nav {
     width: 80vw;
 }
 
+.on {
+    display: none;
+}
+
 .menu-pop-up * {
     color: var(--greyblue);
     margin-left: -1rem;
