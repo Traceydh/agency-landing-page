@@ -23,6 +23,11 @@
     --padding: 2rem;
     --headerheight: 80vh;
 }
+
+body {
+    overflow-x: hidden;
+}
+
 /* General classes*/
 .heading {
     font-family: 'Fraunces', serif;
@@ -151,12 +156,6 @@ nav {
     display: none;
 }
 
-@media (min-width: 600px) {
-    .on {
-        display: none;
-    }
-}
-
 .menu-pop-up * {
     color: var(--greyblue);
 }
@@ -180,12 +179,18 @@ nav {
 	right: 0;
 	width: 0;
 	height: 0;
-	border: 30px solid transparent;
+	border: 40px solid transparent;
 	border-bottom-color: var(--white);
 	border-top: 0;
 	border-right: 0;
 	margin-left: -10px;
 	margin-top: -20px;
+}
+
+@media (min-width: 600px) {
+    .menu-pop-up {
+        display: none;
+    }
 }
 
 .menu-pop-up>li {
