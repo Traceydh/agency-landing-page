@@ -412,3 +412,11 @@ footer * {
         width: 50vw;
     }
 }
+
+@media (max-width: 430px) {
+    .arrow {
+        position: relative;
+        left: 50%;
+        top: 5vh;
+    }
+}
