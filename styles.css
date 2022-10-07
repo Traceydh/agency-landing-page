@@ -430,10 +430,21 @@ footer * {
     }
 }
 
-@media (max-width: 325px) {
-    .profile img {
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
+@media (max-width: 400px) {
+    .grid-child {
+        min-height: 19rem;
+    }
+
+    .text {
+        width: 75%;
+    }
+
+    .bottom {
+        bottom: -5%;
+    }
+    .links {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
     }
 }
