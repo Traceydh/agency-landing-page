@@ -339,8 +339,9 @@ footer * {
 
 .links {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
+    padding: 0;
 }
 
 .contact-container {
@@ -441,10 +442,5 @@ footer * {
 
     .bottom {
         bottom: -5%;
-    }
-    .links {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
     }
 }
