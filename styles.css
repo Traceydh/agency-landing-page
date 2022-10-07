@@ -147,27 +147,17 @@ nav {
 .hamburger-pop-up {
     position: absolute;
     background-color: var(--white);
+    position: absolute; 
     top: 4rem;
-    width: 80vw;
-    right: 8%;
-    z-index:1 ;
+    z-index: 1;
+    left: 50%;
+    min-width: 80%;
+    transform: translate(-50%, 0);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 370px) {
     .hamburger-pop-up {
-        right: 10%;
-    }
-}
-
-@media (max-width: 430px) {
-    .hamburger-pop-up {
-        right: 11%;
-    }
-}
-
-@media (max-width: 380px) {
-    .hamburger-pop-up {
-        right: 13%;
+        left: 46%;
     }
 }
 
@@ -437,5 +427,13 @@ footer * {
         position: relative;
         left: 50%;
         top: 5vh;
+    }
+}
+
+@media (max-width: 325px) {
+    .profile img {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
     }
 }
