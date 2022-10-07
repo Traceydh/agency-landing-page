@@ -148,8 +148,27 @@ nav {
     position: absolute;
     background-color: var(--white);
     top: 4rem;
-    left: 10vw;
     width: 80vw;
+    right: 8%;
+    z-index:1 ;
+}
+
+@media (max-width: 500px) {
+    .hamburger-pop-up {
+        right: 10%;
+    }
+}
+
+@media (max-width: 430px) {
+    .hamburger-pop-up {
+        right: 11%;
+    }
+}
+
+@media (max-width: 380px) {
+    .hamburger-pop-up {
+        right: 13%;
+    }
 }
 
 .on {
